@@ -1,0 +1,12 @@
+{
+  "name": "js-common-utils",
+  "version": "0.1.0",
+  "description": "Collection of most commonly used JS utils",
+  "module": "dist/index.min.js",
+  "author": "https:github.com/aseem2625",
+  "license": "MIT License",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT License"
+}
