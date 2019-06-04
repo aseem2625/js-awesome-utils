@@ -1,0 +1,30 @@
+{
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", {
+      "legacy": true
+    }],
+    ["@babel/plugin-proposal-class-properties", {
+      "loose": true
+    }],
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-transform-regenerator",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-proposal-throw-expressions"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env", {
+      "loose": true,
+      "modules": false,
+      "corejs": 2,
+      "useBuiltIns": "usage",
+      "targets": {
+        "browsers": [
+          "last 2 versions",
+          "> 1%",
+          "ie >= 11"
+        ]
+      }
+    }]
+  ]
+}

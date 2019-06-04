@@ -1,1 +1,1 @@
-export { scrollToEl, scrollToHash } from 'src/helpers/smoothScroll/index';
+export { scrollToEl, scrollToHash } from 'helpers/smoothScroll/index.js';

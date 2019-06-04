@@ -2,11 +2,32 @@
   "name": "js-common-utils",
   "version": "0.1.0",
   "description": "Collection of most commonly used JS utils",
-  "module": "dist/index.min.js",
+  "module": "dist/index.js",
   "author": "https:github.com/aseem2625",
   "license": "MIT License",
   "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT License"
+  "devDependencies": {
+    "rollup": "^1.13.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-multi-entry": "^2.1.0",
+    "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-terser": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-transform-regenerator": "^7.4.3",
+    "@babel/preset-env": "^7.4.3"
+  }
 }
