@@ -1,8 +1,9 @@
 /**
- * A function to convert a first char of string to uppercase. Eg: 'hello world this iS' to 'Hello world this iS'
- * @param  {String} str A string to be processed
- * @return {String}     A string with first char as uppercase
- */
+* @private
+* A function to convert a first char of string to uppercase. Eg: 'hello world this iS' to 'Hello world this iS'
+* @param  {String} str A string to be processed
+* @return {String}     A string with first char as uppercase
+**/
 function _titleCase(str = '') {
   str = str.toLowerCase();
   str[0] = str[0].toUpperCase();
@@ -15,6 +16,7 @@ function _titleCase(str = '') {
  * @param  {String} str        A string to be processed
  * @param  {String} splitToken A token on basis of which str is splitted
  * @return {String}            A title-cased string
+ * @example 'hello_world_thiS_iS' to 'Hello World This Is'
  */
 export function stringToTitleCase(str = '', splitToken = ' ') {
   return str
@@ -28,6 +30,7 @@ export function stringToTitleCase(str = '', splitToken = ' ') {
  * A function to convert snake-cased string to title-cased string. Eg: 'hello_world_thiS_iS' to 'Hello World This Is'
  * @param  {String} str A snake-cased string to be processed
  * @return {String}     A title-cased string
+ * @example 'hello_world_thiS_iS' to 'Hello World This Is'
  */
 export function snakeCaseToTitleCase(str = '', splitToken = '_') {
   return stringToTitleCase(string, '_');

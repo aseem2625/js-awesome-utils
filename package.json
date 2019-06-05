@@ -8,10 +8,12 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "dev": "rollup -c -w",
+    "make-docs": "documentation build src/_*.js --document-exported -f html -o docs",
     "pretest": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "documentation": "^11.0.0",
     "rollup": "^1.13.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",

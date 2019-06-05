@@ -14,12 +14,6 @@ export function debounce(fn, delay = 0) {
   };
 }
 
-/*
- * Usage: throttle(fn_to_be_called, spanTS)
- * Throttled fn is called only once per spanTS.
- *
- * */
-
 /**
  * A function to call a passed function in throttled fashion, i.e, it's called only once per span of duration since first called
  * @param  {Function} fn     A Function to be throttled
