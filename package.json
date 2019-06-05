@@ -1,7 +1,7 @@
 {
   "name": "js-common-utils",
   "version": "0.1.0",
-  "description": "Collection of most commonly used JS utils",
+  "description": "Simple collection of most commonly used JS utils",
   "module": "dist/index.js",
   "author": "https:github.com/aseem2625",
   "license": "MIT License",
