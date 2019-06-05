@@ -19,7 +19,7 @@ export default [
   {
     input: "src/_*.js",
     output: [{
-        file: pkg.module.replace(/\.js$/, `-${pkg.version}.es.min.js`),
+        file: pkg.module.replace(/\.js$/, `.es.min.js`),
         format: 'es'
       }
     ],
