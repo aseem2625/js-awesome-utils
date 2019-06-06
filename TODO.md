@@ -1,6 +1,5 @@
 **TODOs:**
 
-- Add test cases - chai+mocha
 - Add eslint
 - Add typescript
 - Check if more useful fns. can be added
@@ -12,3 +11,7 @@
 - Output minified and non-minified variation of lib
 - Add README.md for description and contribution guidelines
 - Add CI for auto publish npm and `npm run make-docs` 
+
+
+For categorization in doc
+https://github.com/documentationjs/documentation/blob/master/docs/CONFIG.md
