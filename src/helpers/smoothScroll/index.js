@@ -41,5 +41,5 @@ export let scrollToHash = function(evt, to) {
 
   idOrName = hash.substr(1);
 
-  _scrollToEl(idOrName);
+  scrollToEl(idOrName);
 };

@@ -19,8 +19,9 @@ export default [
   {
     input: "src/_*.js",
     output: [{
-        file: pkg.module.replace(/\.js$/, `.es.min.js`),
-        format: 'es'
+        file: 'cjs/' + pkg.main.replace(/\.js$/, `.min.js`),
+        format: 'cjs',
+        sourcemap: true
       }
     ],
     plugins: [
@@ -31,7 +32,9 @@ export default [
       babel({
         exclude: 'node_modules/**' // only transpile our source code
       }),
-      terser()
+      terser({
+        sourcemap: true
+      })
     ],
     treeshake: {
       propertyReadSideEffects: false,

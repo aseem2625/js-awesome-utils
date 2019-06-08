@@ -15,3 +15,6 @@
 
 For categorization in doc
 https://github.com/documentationjs/documentation/blob/master/docs/CONFIG.md
+
+For removing unrequired keys from package.json while publish
+https://stackoverflow.com/a/48823116
