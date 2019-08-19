@@ -6,7 +6,7 @@
 **/
 function _titleCase(str = '') {
   str = str.toLowerCase();
-  str[0] = str[0].toUpperCase();
+  str = str[0].toUpperCase() + str.substr(1);
 
   return str;
 }
@@ -22,8 +22,8 @@ export function stringToTitleCase(str = '', splitToken = ' ') {
   return str
     .trim()
     .split(splitToken)
-    .map(titleCase)
-    .join(' ');
+    .map(_titleCase)
+    .join(splitToken);
 }
 
 /**
