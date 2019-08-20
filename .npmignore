@@ -1,5 +1,5 @@
 .gitignore
 TODO.md
 rollup.config.js
-package-lock.json
 test
+.babelrc
